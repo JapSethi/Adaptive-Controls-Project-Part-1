@@ -9,6 +9,8 @@
 ```
 <p align="center"><img src="Excitation.jpeg"> </p>
 
+$\dot{x}_1$ = f($x_1$) + g($x_1$)$x_2$
+
 #### Tasks List:
 - [x] Executing the appropriate code based on the sequential objectives below
 - [x] Debugging (Comparison of [H1 Estimate](https://community.sw.siemens.com/s/article/what-is-a-frequency-response-function-frf) and [Minimum Realization](https://en.wikipedia.org/wiki/Minimal_realization) FRF)
