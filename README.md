@@ -9,7 +9,7 @@
 ```
 <p align="center"><img src="Excitation.jpeg"> </p>
 
-$\dot{x}_1$ = f($x_1$) + g($x_1$)$x_2$
+![my equation](https://latex.codecogs.com/gif.download?%5Cdpi%7B150%7D%20J%5Cfrac%7Bd%5Comega%7D%7Bdt%7D%20%3D%20-B%5Comega%28t%29%20+%20Ki%28t%29%20%5Cnewline%20L%5Cfrac%7Bdi%7D%7Bdt%7D%20%3D%20-K%5Comega%28t%29%20-%20Ri%28t%29%20+%20v%28t%29)
 
 #### Tasks List:
 - [x] Executing the appropriate code based on the sequential objectives below
