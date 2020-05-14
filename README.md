@@ -6,6 +6,7 @@
 
 <div align="center"> Dynamics of the **brush-commutated permanent-magent DC motor** turning an inertial load are described by:</div>
 
+
 <p align="center"><img src="Background.JPG"> </p>
 
 
