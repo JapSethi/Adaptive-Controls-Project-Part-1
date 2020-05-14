@@ -13,13 +13,20 @@
 
 <p align="center"><img src="Overview_Part1.JPG"> </p>
 
-
-![my equation](https://latex.codecogs.com/gif.download?%5Cdpi%7B150%7D%20J%5Cfrac%7Bd%5Comega%7D%7Bdt%7D%20%3D%20-B%5Comega%28t%29%20+%20Ki%28t%29%20%5Cnewline%20L%5Cfrac%7Bdi%7D%7Bdt%7D%20%3D%20-K%5Comega%28t%29%20-%20Ri%28t%29%20+%20v%28t%29)
-
 #### Tasks List:
-- [x] Executing the appropriate code based on the sequential objectives below
-- [x] Debugging (Comparison of [H1 Estimate](https://community.sw.siemens.com/s/article/what-is-a-frequency-response-function-frf) and [Minimum Realization](https://en.wikipedia.org/wiki/Minimal_realization) FRF)
-- [x] Finding the appropriate reduced order LTI object whose FRF is in coherence with the above two
+**Steps taken to develop a MRAC controller**
+- Finding the reduced the equations (Reduced 1st order or 2nd order equations [**In canonical form**]) and replace coefficents with constant star elements.
+- Specify the Desired trajectory and find it's derivative.
+- Write the equation of reference trajectory & its derivative with reference controller element (r).
+- Writing the Reference Error dynamics (er) equation and it's derivative, and equate the derivative of er to eventually find the reference controller element (r).
+- Chose the controller with it's star coefficients (theta_x and theta_r)star elements.
+- Write Error Dynamics (e) equation and it's derivative, equate the derivative of e along with closing it's loop with our controller u to eventually find the derivative of e in terms of e, r and star values.
+- Find an appropriate Lyapunov Function and it's derivative.
+- Making use of the condition that for **stability** the derivative of the Lyapunov Function needs to be **strictly negative** which will make our Lyapunov Function monotonically decreasing, we equate some terms of that derivative of Lyapunov to help us compute the derivative of adaptive theta_x and theta_r values.
+
+Note: In the above steps if we replace our controller's star coefficients with adaptive coefficients then we have devised MRAC system.
+
+
 
 #### Objectives Achieved: 
 
@@ -64,15 +71,3 @@
 
 
 
-Steps taken to develop a MRAC controller for my Reduced 1st Order System:
-- Finding the reduced 1st Order equation and replacing coefficents with constant star elements
--
-- Specifying the Desired trajectory and finding it's derivative
-- Writing the equation of reference trajectry with reference controller element (r)
-- Writing the Reference Error dynamics (er) equation and it's derivative, and equating it to eventually find the reference controller element (r)
-- Writing Error Dynamics Equation for later use in simulink blocks (e)
-- Finding the controller with star elements
-- Closing the loop to use the controller and thus finding the controller's star coefficients (theta_x and theta_r)
-Note: THe above steps are all used to make it MRC, we can further make some changes as below to make it MRAC
-- We can further make it adaptive by replace the star coefficients with adaptive elements a(t) and b(t)
-- Find an appropriate Lyapunov Function and it's derivative
