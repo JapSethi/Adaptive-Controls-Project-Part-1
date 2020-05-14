@@ -4,7 +4,7 @@
 ### Background:
 <p align="center"><img src="Brushed DC Motor.JPG"> </p>
 
-<div align="center"> Dynamics of the **brush-commutated permanent-magent DC motor** turning an inertial load are described by:</div>
+ #### Dynamics of the **brush-commutated permanent-magent DC motor** turning an inertial load are described by:
 
 
 <p align="center"><img src="Background.JPG"> </p>
