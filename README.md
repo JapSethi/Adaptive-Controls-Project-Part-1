@@ -9,11 +9,9 @@
 
 <p align="center"><img src="Background.JPG"> </p>
 
+### Overview (For Part 1):
 
-
-#### Overview (For Part 1):
-
-
+<p align="center"><img src="Overview_Part1.JPG"> </p>
 
 
 ![my equation](https://latex.codecogs.com/gif.download?%5Cdpi%7B150%7D%20J%5Cfrac%7Bd%5Comega%7D%7Bdt%7D%20%3D%20-B%5Comega%28t%29%20+%20Ki%28t%29%20%5Cnewline%20L%5Cfrac%7Bdi%7D%7Bdt%7D%20%3D%20-K%5Comega%28t%29%20-%20Ri%28t%29%20+%20v%28t%29)
