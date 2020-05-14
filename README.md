@@ -30,11 +30,11 @@
 
 
 ### Results: 
-##<div align="center">Reduced First Order System</div>
+## <div align="center">Reduced First Order System</div>
 
 <p align="center"><img src="ReducedFirstOrderGraphs.jpg"> </p>
 
-##<div align="center">Full Second Order System</div>
+## <div align="center">Full Second Order System</div>
 
 <p align="center"><img src="AllGraphsin2by2_WithProjection.jpg"> </p>
 <p align="center"><img src="ConvexF_NormVel_1by2.jpg"> </p>
