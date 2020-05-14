@@ -1,13 +1,17 @@
 # <div align="center">Adaptive-Controls-Project-Part-1</div>
 **<div align="center"> To design a [model reference adaptive controller](http://www.phoneoximeter.org/uploads/media/EECE574-11_MRAC_01.pdf) for a DC motor drive, which accounts for the presence of an unknown deadzone in the power electronincs, so that the approximate velocity tracking may be achieved without knowledge of motor, load or deadzone parameters.</div>**
 
-> **Note**: For Part 1 of the Project, we implement the following for Reduced First-Order Plant Model (L = 0):
+#### Background:
+<p align="center"><img src="Brushed DC Motor.jpeg"> </p>
+Dynamics of the **brush-commutated permanent-magent DC motor** turning an inertial load are described by:
+<p align="center"><img src="Background.jpeg"> </p>
 
-#### How to Access the Unknown Plant function in the script:
-```Matlab
-  y = s20_plant(u)
-```
-<p align="center"><img src="Excitation.jpeg"> </p>
+
+
+#### Overview (For Part 1):
+
+
+
 
 ![my equation](https://latex.codecogs.com/gif.download?%5Cdpi%7B150%7D%20J%5Cfrac%7Bd%5Comega%7D%7Bdt%7D%20%3D%20-B%5Comega%28t%29%20+%20Ki%28t%29%20%5Cnewline%20L%5Cfrac%7Bdi%7D%7Bdt%7D%20%3D%20-K%5Comega%28t%29%20-%20Ri%28t%29%20+%20v%28t%29)
 
