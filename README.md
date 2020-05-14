@@ -25,31 +25,17 @@
 - Find an appropriate **Lyapunov Function** and it's derivative.
 - Making use of the condition that for **stability** the derivative of the Lyapunov Function needs to be **strictly negative** which will make our Lyapunov Function monotonically decreasing, we equate some terms of that derivative of Lyapunov to help us compute the derivative of adaptive theta_x and theta_r values.
 
-> Note: In the above steps if we replace our controller's star coefficients with adaptive coefficients then we have devised MRAC system.
+> **Note**: In the above steps if we replace our controller's star coefficients with adaptive coefficients then we have devised MRAC system.
 
 
 
-#### Objectives Achieved: 
+### Results: 
+##<div align="center">Reduced First Order System</div>
+<p align="center"><img src="ReducedFirstOrderGraphs.JPG"> </p>
 
-- Constructed an excitation signal for System Identification following the saturation limit for DAC (Digital-to-Analog Converter)
-- Estimated the SNR (Signal to Noise Ratio) for each path of signal `u1 -> y1` and `u1 -> y2`
-- Computed the Power Spectrum for responses and noise signals
-- Applied H1 estimate technique to estimate the frequency response function and estimated coherence of each path
-- Estimated Discrete time transfer functions for each path using `invfreqz()` function and converted it into minimum realization using `minreal()` function
-- Generated a Balanced Realization using `balreal()` and plotted the [Hankel singular values](https://en.wikipedia.org/wiki/Hankel_singular_value) to help generate a reduced order LTI discrete time state space model using `modred()`
-- Generated z-domain grid to plot the z-domain eigen values (poles) for each path using `zgrid()` function
-- Computed and Plotted final discrete-time state space LTI object in comparison to H1 estimate
-
-
-
-
-<p align="center"><img src="Hankel.jpeg"> </p>
-
-<p align="center"><img src="zgrid.jpeg"> </p>
-
-<p align="center"><img src="FinalPlots.jpeg"> </p>
-
-
+##<div align="center">Full Second Order System</div>
+<p align="center"><img src="AllGraphsin2by2_WithProjection.JPG"> </p>
+<p align="center"><img src="ConvexF_NormVel_1by2.JPG"> </p>
 
 
 
@@ -58,9 +44,11 @@
 - Simulink
 
 #### Use of each file:
-- [**Midterm_Project_Japnit_Sethi.mlx**](Midterm_Project_Japnit_Sethi.mlx) - Executable file with learly defined problem statement and approach
-- [**Midterm_Project_Japnit_Sethi.pdf**](Midterm_Project_Japnit_Sethi.pdf) - Published Document for a quick check of Solutions and Code
-- [**s20_plant.p**](s20_plant.p) - Plant function file that takes excitation u as input (1xN) and returns the output response y(2xN), where N is the number of samples
+- [**AdaptiveControlsProjectPart1_Sethi.mlx**](AdaptiveControlsProjectPart1_Sethi.mlx) - Executable file with clearly defined problem statement and approach
+- [**AdaptiveControlsProjectPart1_Sethi.pdf**](AdaptiveControlsProjectPart1_Sethi.pdf) - Published Document for a quick check of Solutions and Code
+- [**AdaptiveControlsProjectPart1_Sethi.slx**](AdaptiveControlsProjectPart1_Sethi.slx) - Simulink Model with clearly defined subsystems of both reduced Order and Full Second Order system
+> **Note:** Comment out the portion you are not going to use in both simulink and the .mlx script file.
+
 
 
 
